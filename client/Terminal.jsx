@@ -80,7 +80,8 @@ const Terminal = () => {
     command.commands = {
       ...command.commands,
       email: email(search),
-      clear
+	clear,
+	clean
     };
   }
 
