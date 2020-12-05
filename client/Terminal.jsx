@@ -9,6 +9,7 @@ import { forEach } from '@replit/clui-gql';
 import QueryPrompt from './QueryPrompt';
 import MutationPrompt from './MutationPrompt';
 import clear from './commands/clear';
+import clean from './commands/clean';
 import email from './commands/email';
 
 import Prompt from './Prompt';
