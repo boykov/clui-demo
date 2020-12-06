@@ -79,7 +79,7 @@ const Terminal = () => {
     forEach(command, applyRunFn);
     command.commands = {
       ...command.commands,
-      email: name(search),
+      email: email(search),
 	clear,
 	clean
     };
