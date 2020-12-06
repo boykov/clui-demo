@@ -82,6 +82,10 @@ export default search => {
 
       if (res.data.search) {
         return res.data.search.reduce((acc, contact) => {
+          acc[contact.email] = {
+            description: contact.name,
+            run: () => <Email contact={contact} />
+          };
           acc[contact.name] = {
             description: contact.email,
             run: () => <Email contact={contact} />
