@@ -121,7 +121,7 @@ const Prompt = props => {
           index: option.cursorTarget + 1
         });
       }}
-      itemToString={item => item.data.description}
+      itemToString={item => (item ? item.data.description : '')}
     >
       {ds => {
         const inputProps = ds.getInputProps({
