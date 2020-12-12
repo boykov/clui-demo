@@ -67,7 +67,7 @@ const resolvers = {
       const filtered = args.query
         ? contacts.filter(
             c =>
-              c.name.toLowerCase().includes(args.query.toLowerCase()) ||
+              c.name.toLowerCase().includes(args.query.toLowerCase().replace(/_/g," ")) ||
               c.email.toLowerCase().includes(args.query.toLowerCase())
           )
         : contacts.slice(0, 10);
