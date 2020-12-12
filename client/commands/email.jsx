@@ -86,7 +86,7 @@ export default search => {
             description: contact.email,
             run: () => <Email contact={contact} />
           };
-          acc[contact.name] = {
+          acc[contact.name.replace(/ /g,"_")] = {
             description: contact.email,
             run: () => <Email contact={contact} />
           };
